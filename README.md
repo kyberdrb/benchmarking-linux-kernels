@@ -1,6 +1,6 @@
 # Benchmarking Linux Kernels
 
-Tool for decision support of what kernel to choose.
+Decision support tool for choosing the 'best' kernel.
 
 ## Usage
 
