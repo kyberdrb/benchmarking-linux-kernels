@@ -10,9 +10,10 @@ Decision support tool for choosing the 'best' kernel.
     cd benchmarking-linux-kernels/
     ./which_kernel_is_the_best.sh
 
-Then follow the isntructions in the terminal.
+Then follow the instructions in the terminal.
 
 ## Data preparation
+
 Data generated with command
 
         sudo ls && clear && date && sleep 5 && ubench && date && sleep 10 && sudo interbench && date && mv "~/$(uname -r).log" ~/git/kyberdrb/benchmarking-linux-kernels/data/raw_data/interbench-$(uname -r).log
