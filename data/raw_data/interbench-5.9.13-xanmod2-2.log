@@ -1,0 +1,43 @@
+
+Using 897723 loops per ms, running every load for 30 seconds
+Benchmarking kernel 5.9.13-xanmod2-2 at datestamp 202012262032
+
+--- Benchmarking simulated cpu of Audio in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU  % Deadlines Met
+None	   0.1 +/- 0.1        0.1		 100	        100
+Video	   0.0 +/- 0.0        0.1		 100	        100
+X	   0.1 +/- 0.1        0.1		 100	        100
+Burn	   0.0 +/- 0.0        0.0		 100	        100
+Write	   0.0 +/- 0.1        0.1		 100	        100
+Read	   0.0 +/- 0.1        0.2		 100	        100
+Compile	   0.0 +/- 0.1        1.5		 100	        100
+
+--- Benchmarking simulated cpu of Video in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU  % Deadlines Met
+None	   0.1 +/- 0.1        0.1		 100	        100
+X	   0.1 +/- 0.1        0.2		 100	        100
+Burn	   0.0 +/- 0.0        0.0		 100	        100
+Write	   0.0 +/- 0.1        0.1		 100	        100
+Read	   0.1 +/- 0.1        0.1		 100	        100
+Compile	   0.0 +/- 0.1        2.4		 100	        100
+
+--- Benchmarking simulated cpu of X in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU  % Deadlines Met
+None	   0.0 +/- 0.0        0.2		 100	        100
+Video	   0.0 +/- 0.0        0.0		 100	        100
+Burn	   1.2 +/- 4.6       27.0		  79	       74.4
+Write	   0.0 +/- 0.0        0.2		 100	        100
+Read	   0.0 +/- 0.0        0.1		 100	        100
+Compile	   1.4 +/- 5.6       33.0		81.6	         78
+
+--- Benchmarking simulated cpu of Gaming in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU
+None	   0.0 +/- 0.0        0.0		 100
+Video	   0.0 +/- 0.0        0.0		 100
+X	   0.0 +/- 0.0        0.0		 100
+Burn	   3.5 +/- 8.6       36.2		96.6
+Write	   0.0 +/- 0.0        0.0		 100
+Read	   0.0 +/- 0.0        0.0		 100
+Compile	   5.1 +/- 12.2      89.1		95.2
+
+

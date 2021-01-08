@@ -1,0 +1,43 @@
+
+Using 797969 loops per ms, running every load for 30 seconds
+Benchmarking kernel 5.9.14-zen1-1-zen at datestamp 202012221946
+
+--- Benchmarking simulated cpu of Audio in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU  % Deadlines Met
+None	   0.0 +/- 0.0        0.1		 100	        100
+Video	   0.1 +/- 0.1        0.3		 100	        100
+X	   0.1 +/- 0.1        0.2		 100	        100
+Burn	   0.0 +/- 0.0        0.0		 100	        100
+Write	   0.1 +/- 0.1        0.3		 100	        100
+Read	   0.1 +/- 0.1        0.2		 100	        100
+Compile	   0.0 +/- 0.2        2.9		 100	        100
+
+--- Benchmarking simulated cpu of Video in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU  % Deadlines Met
+None	   0.2 +/- 0.2        0.2		 100	        100
+X	   0.1 +/- 0.1        0.2		 100	        100
+Burn	   0.0 +/- 0.0        0.3		 100	        100
+Write	   0.2 +/- 1.1       16.9		 100	       99.6
+Read	   0.1 +/- 0.1        0.2		 100	        100
+Compile	   0.0 +/- 0.1        2.4		 100	        100
+
+--- Benchmarking simulated cpu of X in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU  % Deadlines Met
+None	   0.0 +/- 0.0        0.2		 100	        100
+Video	   0.0 +/- 0.0        0.1		 100	        100
+Burn	   0.2 +/- 1.2       10.0		96.8	       94.8
+Write	   0.0 +/- 0.0        0.1		 100	        100
+Read	   0.0 +/- 0.0        0.1		 100	        100
+Compile	   1.1 +/- 5.5       44.0		90.8	       87.5
+
+--- Benchmarking simulated cpu of Gaming in the presence of simulated ---
+Load	Latency +/- SD (ms)  Max Latency   % Desired CPU
+None	   0.0 +/- 0.0        0.0		 100
+Video	   0.0 +/- 0.0        0.0		 100
+X	   0.0 +/- 0.0        0.0		 100
+Burn	   1.3 +/- 3.7       18.3		98.7
+Write	   0.0 +/- 0.0        0.0		 100
+Read	   0.0 +/- 0.0        0.0		 100
+Compile	   3.3 +/- 7.6       56.5		96.8
+
+
