@@ -14,13 +14,15 @@ Then follow the instructions in the terminal.
 
 ## Data preparation
 
-Data generated with command
+Data generated with script
 
-        sudo ls && clear && date && sleep 5 && ubench && date && sleep 10 && sudo interbench && date && mv "~/$(uname -r).log" ~/git/kyberdrb/benchmarking-linux-kernels/data/raw_data/interbench-$(uname -r).log
+    ./begin_benchmarking.sh
 
-**Change** the `~/git/kyberdrb/benchmarking-linux-kernels` with the actual path to the repository on your computer.
+Unixbench output needs to be manually copied entirely and then manually pasted into a new file corresponding with the kernel info. Then follow the instructions on the screen.
 
-Unixbench output is trimmed manually. See sample data in `data/raw_data/` directory.
+See sample data in `data/raw_data/` directory for examples of `interbench` and `unixbench` files.
+
+**The script relies on that all data be in the same format with the same number of lines**
 
 ## Data preprocessing
 
