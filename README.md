@@ -2,6 +2,14 @@
 
 Decision support tool for choosing the 'best' kernel.
 
+## Current state of tested Linux kernels
+
+- **lts - boots; vbox VMs start; USB work**
+- **linux-tkg-muqss-skylake 5.10.14 (last stable version) - boots; vbox VMs start; USB work**
+- clear - boots; vbox VMs don't start, USB work
+- lqx - boots; vbox VMs don't start, USB doesn't work
+- everything else (approximately between 5.10.14 - 5.11.2 onwards - including linux-libre, linux-lts-tkg-muqss, etc.) - doesn't boot: kernel panic
+
 ## Usage
 
     mkdir ~/git
