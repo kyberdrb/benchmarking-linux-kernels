@@ -14,13 +14,17 @@ date
 
 sleep 10
 rm -f "${HOME}"/interbench.*
-sudo interbench
+#sudo interbench
 
 date
 
-mv "${HOME}/$(uname -r).log" "${SCRIPT_DIR}"/data/raw_data/interbench-$(uname -r).log
+# https://linuxhandbook.com/check-group-of-user/
+GROUP=$(id --group --name $USER)
 
-rm -f ~/interbench.*
+sudo chown $USER:$GROUP "${HOME}/$(uname -r).log"
+mv "${HOME}/$(uname -r).log" "${SCRIPT_DIR}/data/raw_data/interbench-$(uname -r).log"
+
+#rm -f "${HOME}"/interbench.*
 
 echo
 echo "Check vulnerability status"
@@ -56,6 +60,12 @@ echo
 echo "Remove all empty lines at the bottom of the file"
 echo
 echo "    press 'G', then 'dd' as many times, as there are blank lines"
+echo
+echo "Add padding to ensure format uniformity when you disabled SMT/HyperTreading or swapped CPU that has different amout of cores"
+echo
+echo "    press ':', then ':15put! =repeat(\"\n\",4)'"
+echo "which puts 4 new lines after the line 15"
+echo "https://unix.stackexchange.com/questions/14746/vi-command-for-adding-blank-line/616581#616581"
 echo
 echo "Save and exit file"
 echo
