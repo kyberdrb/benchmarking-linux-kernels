@@ -4,11 +4,13 @@ Decision support tool for choosing the 'best' kernel.
 
 ## Current state of tested Linux kernels
 
-- **linux-lqx 5.11.7 - boots; vbox VMs don't start - modules don't compile, USB works**
-- **linux-lts - boots; vbox VMs start; USB work**
-- linux-tkg-muqss-skylake 5.10.14 (last stable version) - boots; vbox VMs start; USB work
+- **linux-lqx 5.11.11+ - boots; vbox VMs don't start - modules don't compile, KVM virtual machines work; USB works**
+- **linux-lts - boots; vbox VMs start; KVM virtual machines work; USB work**
+- linux-tkg-muqss-skylake 5.11.11+ (last working version was 5.10.14 before the 5.11.0 introduced the kernel panic) - boots; vbox VMs start; USB work
 - linux-clear - boots; vbox VMs don't start, USB work
-- the rest of the kernels (approximately since 5.11 onwards - including linux-libre, linux-lts-tkg-muqss, etc.) - doesn't boot: kernel panic; possible cause: `dell-wmi-sysman` module - 5.10.x kernel doesn't have that module included or loaded
+- the rest of the kernels (approximately since 5.11 onwards - including linux-libre, linux-lts-tkg-muqss, etc.) - doesn't boot: kernel panic; possible cause: `dell-wmi-sysman` module - 5.10.x kernels boot properly and don't have that module included or loaded
+
+From the version 5.11.11 onwards the `dell-wmi-sysman` kernel panic issue is fixed. [[1]](https://duckduckgo.com/?q=dell+5.11+kernel+panic&ia=web), [[2]](https://bbs.archlinux.org/viewtopic.php?id=264340), [[3]](https://bugzilla.kernel.org/show_bug.cgi?id=212069), [[4]](https://bbs.archlinux.org/viewtopic.php?id=264136), [[5]](https://duckduckgo.com/?q=module_blacklist%3Ddell_wmi_sysman&ia=web), [[6]](https://bugzilla.kernel.org/show_bug.cgi?id=211895)
 
 ## Usage
 
